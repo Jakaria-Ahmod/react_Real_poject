@@ -5,8 +5,8 @@ import { FaDog } from 'react-icons/fa';
 
 const Card = () => {
   return (
-    <div className="my_container">
-      <div className="mt-[177px]">
+    <div className="my_container ">
+      <div className="mt-[177px] mb-[100px]">
         <section className="grid grid-cols-3">
           {cardItems?.map((item, index) => (
             <div className="w-[370px] h-[400px] rounded-md border border-white bg-white text-center px-[17px] py-[54px] hover:bg-[#F9CE3B] group transition duration-300 cursor-pointer">
