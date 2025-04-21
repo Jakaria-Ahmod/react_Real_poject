@@ -9,13 +9,13 @@ const Card = () => {
       <div className="mt-[177px] mb-[100px]">
         <section className="grid grid-cols-3">
           {cardItems?.map((item, index) => (
-            <div className="w-[370px] h-[400px] rounded-md border border-white bg-white text-center px-[17px] py-[54px] hover:bg-[#F9CE3B] group transition duration-300 cursor-pointer">
+            <div className="w-[370px] h-[400px] rounded-md border border-white bg-white text-center px-[17px] py-[54px] hover:bg-parimary group transition duration-300 cursor-pointer">
               {/* <img src={Img} alt="" className="mx-auto" /> */}
-              <div className="w-[95px] h-[95px] bg-[#F9CE3B] rounded-full mx-auto flex items-center justify-center ">
+              <div className="w-[95px] h-[95px] bg-parimary  rounded-full mx-auto flex items-center justify-center ">
                 <img
                   src={item?.img}
                   alt=""
-                  className="group-hover:opacity-80 transition duration-300 "
+                  className="group-hover:opacity-80 transition duration-300 hover:text-parimary"
                 />
               </div>
               <h2 className="mt-[34px] font-Popins text-[38px] group-hover:text-white">

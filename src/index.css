@@ -7,13 +7,15 @@ body {
 }
 @custom-variant dark (&:is(.dark *));
 
-.my_container {
-  width: 1175px;
-  margin: 0 auto;
-}
 @theme {
   --font-Popins: 'Poppins', sans-serif;
   --font-Manjari: 'Manjari', sans-serif;
+  --color-parimary: #f9ce3b;
+  --color-text1: #27233a;
+}
+@utility container {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 @theme inline {
