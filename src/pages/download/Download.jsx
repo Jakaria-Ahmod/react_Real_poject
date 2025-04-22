@@ -4,6 +4,7 @@ import appleButton from '../../assets/img/appleButton.png';
 import mobleImgOne from '../../assets/img/mobleone.png';
 import mobleImgTow from '../../assets/img/mobileTow.png';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Download = () => {
   return (
@@ -37,12 +38,37 @@ const Download = () => {
               </div>
             </div>
             <div className="relative">
-              <div>
-                <img src={mobleImgOne} alt="" />
-              </div>
-              <div className="absolute top-12 right-[-6px]">
-                <img src={mobleImgTow} alt="" />
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <motion.img
+                  src={mobleImgOne}
+                  alt=""
+                  initial={{ opacity: 0, x: -200 }} // Initially hidden on left
+                  whileInView={{ opacity: 1, x: 0 }} // Scroll করলে দেখা যাবে
+                  transition={{ duration: 1 }}
+                  viewport={{ once: true }}
+                />
+              </motion.div>
+              <motion.div
+                className="absolute top-12 right-[-6px]"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <motion.img
+                  src={mobleImgTow}
+                  alt=""
+                  initial={{ opacity: 0, x: 200, y: 100 }} // Initially hidden on top-right
+                  whileInView={{ opacity: 1, x: 0, y: 0 }} // Scroll করলে দেখা যাবে
+                  transition={{ duration: 1 }}
+                  viewport={{ once: true }}
+                />
+              </motion.div>
             </div>
           </div>
         </section>
