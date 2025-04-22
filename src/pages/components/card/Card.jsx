@@ -10,18 +10,17 @@ const Card = () => {
         <section className="grid grid-cols-3">
           {cardItems?.map((item, index) => (
             <div className="w-[370px] h-[400px] rounded-md border border-white bg-white text-center px-[17px] py-[54px] hover:bg-parimary group transition duration-300 cursor-pointer">
-              {/* <img src={Img} alt="" className="mx-auto" /> */}
               <div className="w-[95px] h-[95px] bg-parimary  rounded-full mx-auto flex items-center justify-center ">
                 <img
                   src={item?.img}
                   alt=""
-                  className="group-hover:opacity-80 transition duration-300 hover:text-parimary"
+                  className="group-hover:opacity-80 transition duration-300 hover:text-parimary "
                 />
               </div>
-              <h2 className="mt-[34px] font-Popins text-[38px] group-hover:text-white">
+              <h2 className="mt-[34px] font-Popins text-[38px] group-hover:text-white transition duration-200">
                 {item?.title}
               </h2>
-              <p className="text-[16px] leading-[35px] mt-[11px]  group-hover:text-white">
+              <p className="text-[16px] leading-[35px] mt-[11px]  group-hover:text-white transition duration-200">
                 {item?.disception}
               </p>
             </div>
