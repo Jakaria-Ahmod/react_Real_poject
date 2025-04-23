@@ -8,6 +8,8 @@ import './App.css';
 import Layout from './autolayout/Layout';
 import Home from './pages/Home/Home';
 import Singup from './pages/components/singup/Singup';
+import { ToastContainer } from 'react-toastify';
+import Login from './pages/components/login/Login';
 
 function App() {
   const router = createBrowserRouter(
@@ -20,13 +22,14 @@ function App() {
         <Route path="/products" element={<div>products page</div>}></Route>
         <Route path="/download" element={<div>download page</div>}></Route>
         <Route path="/signup" element={<Singup></Singup>}></Route>
-        <Route path="/login" element={<div>login page</div>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
       </Route>
     )
   );
 
   return (
     <div>
+      <ToastContainer></ToastContainer>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
