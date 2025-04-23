@@ -7,6 +7,7 @@ import {
 import './App.css';
 import Layout from './autolayout/Layout';
 import Home from './pages/Home/Home';
+import Singup from './pages/components/singup/Singup';
 
 function App() {
   const router = createBrowserRouter(
@@ -18,7 +19,7 @@ function App() {
         <Route path="/blog" element={<div>blog page</div>}></Route>
         <Route path="/products" element={<div>products page</div>}></Route>
         <Route path="/download" element={<div>download page</div>}></Route>
-        <Route path="/signup" element={<div>signup page</div>}></Route>
+        <Route path="/signup" element={<Singup></Singup>}></Route>
         <Route path="/login" element={<div>login page</div>}></Route>
       </Route>
     )
