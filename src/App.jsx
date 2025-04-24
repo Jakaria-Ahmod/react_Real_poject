@@ -10,6 +10,7 @@ import Home from './pages/Home/Home';
 import Singup from './pages/components/singup/Singup';
 import { ToastContainer } from 'react-toastify';
 import Login from './pages/components/login/Login';
+import 'swiper/css';
 
 function App() {
   const router = createBrowserRouter(

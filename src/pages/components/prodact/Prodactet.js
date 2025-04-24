@@ -59,4 +59,175 @@ export const prodactItems = [
     text: 'Food Eco',
     button: 'Our Review',
   },
+  {
+    img: prodactMainImg,
+    prodactList: [
+      {
+        img: prodactMarkImg,
+        title: '100% Organic Material',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Reduce Wastage ',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Quicker Potty Training',
+      },
+    ],
+    text: 'Food Eco',
+    button: 'Our Review',
+  },
+  {
+    img: prodactMainImg,
+    prodactList: [
+      {
+        img: prodactMarkImg,
+        title: '100% Organic Material',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Reduce Wastage ',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Quicker Potty Training',
+      },
+    ],
+    text: 'Food Eco',
+    button: 'Our Review',
+  },
+  {
+    img: prodactMainImg,
+    prodactList: [
+      {
+        img: prodactMarkImg,
+        title: '100% Organic Material',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Reduce Wastage ',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Quicker Potty Training',
+      },
+    ],
+    text: 'Food Eco',
+    button: 'Our Review',
+  },
+  {
+    img: prodactMainImg,
+    prodactList: [
+      {
+        img: prodactMarkImg,
+        title: '100% Organic Material',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Reduce Wastage ',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Quicker Potty Training',
+      },
+    ],
+    text: 'Food Eco',
+    button: 'Our Review',
+  },
+  {
+    img: prodactMainImg,
+    prodactList: [
+      {
+        img: prodactMarkImg,
+        title: '100% Organic Material',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Reduce Wastage ',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Quicker Potty Training',
+      },
+    ],
+    text: 'Food Eco',
+    button: 'Our Review',
+  },
+  {
+    img: prodactMainImg,
+    prodactList: [
+      {
+        img: prodactMarkImg,
+        title: '100% Organic Material',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Reduce Wastage ',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Quicker Potty Training',
+      },
+    ],
+    text: 'Food Eco',
+    button: 'Our Review',
+  },
+  {
+    img: prodactMainImg,
+    prodactList: [
+      {
+        img: prodactMarkImg,
+        title: '100% Organic Material',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Reduce Wastage ',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Quicker Potty Training',
+      },
+    ],
+    text: 'Food Eco',
+    button: 'Our Review',
+  },
+  {
+    img: prodactMainImg,
+    prodactList: [
+      {
+        img: prodactMarkImg,
+        title: '100% Organic Material',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Reduce Wastage ',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Quicker Potty Training',
+      },
+    ],
+    text: 'Food Eco',
+    button: 'Our Review',
+  },
+  {
+    img: prodactMainImg,
+    prodactList: [
+      {
+        img: prodactMarkImg,
+        title: '100% Organic Material',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Reduce Wastage ',
+      },
+      {
+        img: prodactMarkImg,
+        title: 'Quicker Potty Training',
+      },
+    ],
+    text: 'Food Eco',
+    button: 'Our Review',
+  },
 ];
