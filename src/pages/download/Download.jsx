@@ -28,10 +28,10 @@ const Download = () => {
               </h6>
               <div className="">
                 <div className="mt-[50px] flex space-x-[28px]">
-                  <Button className="bg-white shadow-2xl rounded-full px-[46px] py-[30px] hover:bg-white cursor-pointer">
+                  <Button className="bg-white shadow-2xl rounded-full px-[46px] py-[25px] hover:bg-white cursor-pointer">
                     <img src={googleButton} alt="" />
                   </Button>
-                  <Button className="bg-white shadow-2xl rounded-full px-[46px] py-[30px] hover:bg-white cursor-pointer">
+                  <Button className="bg-white shadow-2xl rounded-full px-[46px] py-[25px] hover:bg-white cursor-pointer">
                     <img src={appleButton} alt="" />
                   </Button>
                 </div>

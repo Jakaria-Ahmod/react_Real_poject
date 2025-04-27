@@ -3,11 +3,16 @@ import LogoImg from '../../../assets/img/navLogo.png';
 import { Link } from 'react-router';
 import { MenuItem } from './NavDamiData';
 import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
 // 1175 px
 const Nav = () => {
   return (
     <div className=" container">
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }} // Initially hidden on left
+        whileInView={{ opacity: 1, y: 0 }} // Scroll করলে দেখা যাবে
+        transition={{ duration: 1 }}
+      >
         <nav className="flex items-center justify-between mt-[11px]">
           <div>
             <Link to="/">
@@ -22,7 +27,7 @@ const Nav = () => {
                   key={item?.id}
                   className="hover:text-parimary text-[16px] font-Popins transition duration-200"
                 >
-                  <Link to={item?.path}>{item?.name}</Link>
+                  <Link>{item?.name}</Link>
                 </li>
               ))}
             </ul>
@@ -36,7 +41,7 @@ const Nav = () => {
             </Button>
           </div>
         </nav>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutImg from '../../assets/img/aboutIMg.png';
 import { Button } from '@/components/ui/button';
-
+import { motion } from 'framer-motion';
 const About = () => {
   return (
     <div>
@@ -14,10 +14,20 @@ const About = () => {
             </p>
           </div>
           <div className="grid grid-cols-[40%_60%] items-center mt-[66px] gap-x-[116px]">
-            <div className="w-full">
+            <motion.div
+              className="w-full"
+              initial={{ opacity: 0, x: -200 }} // Initially hidden on left
+              whileInView={{ opacity: 1, x: 0 }} // Scroll করলে দেখা যাবে
+              transition={{ duration: 1 }}
+            >
               <img src={AboutImg} alt="" />
-            </div>
-            <div className="w-full">
+            </motion.div>
+            <motion.div
+              className="w-full"
+              initial={{ opacity: 0, x: 400 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 2 }}
+            >
               <h3 className="font-Popins text-[45px] leading-[64px] font-semibold">
                 We are the world’s most trusted animal trainer
               </h3>
@@ -30,7 +40,7 @@ const About = () => {
               <Button className="bg-parimary rounded-full px-[59px] py-[16px] hover:bg-parimary cursor-pointer">
                 About Us
               </Button>
-            </div>
+            </motion.div>
           </div>
         </section>
       </div>

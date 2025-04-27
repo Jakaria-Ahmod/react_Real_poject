@@ -1,6 +1,6 @@
 import React from 'react';
 import { appScreenData } from './appscreenData';
-
+import { motion } from 'framer-motion';
 const AppSreen = () => {
   return (
     <div>
@@ -14,7 +14,13 @@ const AppSreen = () => {
         <div className="grid grid-cols-3 items-center mt-[95px] mb-[146px] gap-3">
           {appScreenData.map((item, index) => (
             <div key={index}>
-              <img src={item?.img} alt="screenshot img" />
+              <motion.img
+                initial={{ opacity: 0, x: -200 }} // Initially hidden on left
+                whileInView={{ opacity: 1, x: 0 }} // Scroll করলে দেখা যাবে
+                transition={{ duration: 1 }}
+                src={item?.img}
+                alt="screenshot img"
+              />
             </div>
           ))}
         </div>

@@ -2,9 +2,16 @@ import { Button } from '@/components/ui/button';
 import React from 'react';
 import BannerImg from '../../assets/img/bannerImg.png';
 import BannerShaedow from '../../assets/img/bannerShedow.png';
+import { motion } from 'framer-motion';
+
 const Banner = () => {
   return (
-    <div className="my_container">
+    <motion.div
+      className="my_container"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="mt-5">
         <section className="grid grid-cols-2 items-center -gap-5 justify-between">
           <div className="w-[100%]">
@@ -31,7 +38,7 @@ const Banner = () => {
           </div>
         </section>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
