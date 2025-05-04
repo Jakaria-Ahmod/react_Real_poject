@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import './pordactt.css'; // CSS ঠিকমতো import করা আছে কিনা নিশ্চিত করো
+import './Pordactt.css'; // CSS ঠিকমতো import করা আছে কিনা নিশ্চিত করো
 
 const Prodact = () => {
   return (
