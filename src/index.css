@@ -12,10 +12,46 @@ body {
   --font-Manjari: 'Manjari', sans-serif;
   --color-parimary: #f9ce3b;
   --color-text1: #27233a;
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
 }
 @utility container {
   width: 1170px;
   margin: 0 auto;
+}
+@media (max-width: 575.999px) {
+  .container {
+    max-width: 97%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.999px) {
+  .container {
+    max-width: 97%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.999px) {
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.999px) {
+  .container {
+    max-width: 97%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.999px) {
+  .container {
+    max-width: 97%;
+    margin: 0 auto;
+  }
 }
 
 @theme inline {

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const AppSreen = () => {
   return (
     <div>
-      <section>
+      <section className="container">
         <div className="text-center">
           <p className="font-Manjari text-[24px]">Screenshots</p>
           <h2 className="font-Popins text-[30px] font-semibold">

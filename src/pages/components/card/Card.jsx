@@ -7,10 +7,11 @@ import { motion } from 'framer-motion';
 const Card = () => {
   return (
     <div className="my_container ">
-      <div className="mt-[177px] mb-[100px]">
-        <section className="grid grid-cols-3">
+      <div className="mt-[50px] md:mt-[177px] mb-[100px]">
+        <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-4 md:gap-5 justify-center">
           {cardItems?.map((item, index) => (
             <motion.div
+              key={index}
               className="w-[370px] h-[400px] rounded-md border border-white bg-white text-center px-[17px] py-[54px] hover:bg-parimary group transition duration-300 cursor-pointer"
               initial={{ opacity: 0, y: 100 }} // Initially hidden on left
               whileInView={{ opacity: 1, y: 0 }} // Scroll করলে দেখা যাবে

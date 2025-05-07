@@ -5,15 +5,15 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <div>
-      <div>
+      <div className="container">
         <section>
           <div className="text-center ">
             <span className="text-[24px] font-Manjari">About Us</span>
-            <p className="text-[30px] font-Popins capitalize font-semibold max-w-[380px] mx-auto leading-[44px]">
+            <p className="text-[30px] font-Popins capitalize font-semibold max-w-[380px]  mx-auto leading-[44px]">
               Best service for training your lovely dog
             </p>
           </div>
-          <div className="grid grid-cols-[40%_60%] items-center mt-[66px] gap-x-[116px]">
+          <div className="grid md:grid-cols-[40%_60%] items-center mt-[66px] md:gap-x-[50px] xl:gap-x-[116px]">
             <motion.div
               className="w-full"
               initial={{ opacity: 0, x: -200 }} // Initially hidden on left
@@ -23,12 +23,13 @@ const About = () => {
               <img src={AboutImg} alt="" />
             </motion.div>
             <motion.div
-              className="w-full"
-              initial={{ opacity: 0, x: 400 }}
+              className="w-full mt-[20px] hidden md:block"
+              initial={{ opacity: 0, x: 10 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 2 }}
+              viewport={{ once: true }}
             >
-              <h3 className="font-Popins text-[45px] leading-[64px] font-semibold">
+              <h3 className="font-Popins text-[30px] leading-[40px] md:text-[35px]  md:leading-[64px] font-semibold">
                 We are the world’s most trusted animal trainer
               </h3>
               <p className="font-Popins text-[18px] leading-[34px] mt-[24px] mb-[50px] max-w-[570px] capitalize">

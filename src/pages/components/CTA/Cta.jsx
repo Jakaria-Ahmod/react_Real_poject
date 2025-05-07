@@ -6,20 +6,21 @@ import { motion } from 'framer-motion';
 const Cta = () => {
   return (
     <div>
-      <div className="mb-[100px]">
-        <section className="grid grid-cols-[auto_auto]  justify-between gap-32">
+      <div className=" mb-[100px] container">
+        <section className="grid md:grid-cols-[auto_auto] justify-center md:justify-between gap-32">
           <motion.div
             initial={{ opacity: 0, x: -200 }} // Initially hidden on left
             whileInView={{ opacity: 1, x: 0 }} // Scroll করলে দেখা যাবে
             transition={{ duration: 1 }}
+            viewport={{ once: true }}
           >
-            <h4 className="text-[55px] font-medium font-Popins leading-[80px]">
+            <h4 className=" text-[30px] md:text-[55px] font-medium font-Popins leading-[50px] md:leading-[80px]">
               Download Our Tracking Sheet
             </h4>
             <span className="text-[38px] font-medium leading-[40px font-Popins] mb-[3 5px] mt-[40px]">
               Train Your Pup :
             </span>
-            <p className="text-[24px] leading-[40px] font-Popins text-[#27233AE5] mb-[75px]">
+            <p className="text-[24px] leading-[40px] font-Popins text-[#27233AE5] mt-3 md:mt-0 mb-[75px]">
               Log your dog’s pees, poops and meals and Puppy Potty Log will use
               the data to create a custom housetraining schedule unique to your
               fur baby.
@@ -33,6 +34,7 @@ const Cta = () => {
             initial={{ opacity: 0, x: 200 }} // Initially hidden on left
             whileInView={{ opacity: 1, x: 0 }} // Scroll করলে দেখা যাবে
             transition={{ duration: 1 }}
+            viewport={{ once: true }}
           >
             <img src={ctaImg} alt="" className="w-full h-full object-cover" />
           </motion.div>

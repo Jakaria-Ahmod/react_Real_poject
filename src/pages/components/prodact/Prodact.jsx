@@ -18,7 +18,7 @@ const Prodact = () => {
             Pick Our Products
           </h2>
         </div>
-        <div className="flex gap-x-5 justify-between mt-[73px] p-6 h-[700px]  relative">
+        <div className="flex gap-x-5 justify-center md:justify-between mt-[73px] p-6 h-[700px] relative">
           <Swiper
             spaceBetween={50}
             slidesPerView={3}
@@ -33,6 +33,20 @@ const Prodact = () => {
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              576: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
           >
             {prodactItems.map((item, index) => (
               <SwiperSlide key={index}>

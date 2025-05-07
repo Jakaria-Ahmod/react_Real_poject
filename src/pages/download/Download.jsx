@@ -9,11 +9,11 @@ import { motion } from 'framer-motion';
 const Download = () => {
   return (
     <div>
-      <div>
-        <section className="mb-[118px]">
-          <div className="grid grid-cols-[60%_40%] mt-[146px] space-x-[146px]">
+      <div className="container">
+        <section className=" md:mb-[118px]">
+          <div className="grid lg:justify-between md:grid-cols-[50%_40%] mt-[30px] md:mt-[146px] space-x-[146px]">
             <div>
-              <h5 className="font-Popins text-[55px] leading-[85px] capitalize max-w-[516px] text-[#333333]">
+              <h5 className="font-Popins text-[30px] leading-[60px] md:text-[55px] md:leading-[85px] capitalize max-w-[516px] text-[#333333]">
                 One Mobile App For Your Lovely Pet
               </h5>
               <p className="text-[19px] font-Popins leading-[34px] capitalize max-w-[554px] mt-[17px] mb-[64px]">
@@ -27,17 +27,17 @@ const Download = () => {
                 Download The App
               </h6>
               <div className="">
-                <div className="mt-[50px] flex space-x-[28px]">
+                <div className=" mt-1.5 md:mt-[50px] md:flex md:space-x-[28px]">
                   <Button className="bg-white shadow-2xl rounded-full px-[46px] py-[25px] hover:bg-white cursor-pointer">
                     <img src={googleButton} alt="" />
                   </Button>
-                  <Button className="bg-white shadow-2xl rounded-full px-[46px] py-[25px] hover:bg-white cursor-pointer">
+                  <Button className="bg-white mt-3 md:mt-0 shadow-2xl rounded-full px-[46px] py-[25px] hover:bg-white cursor-pointer">
                     <img src={appleButton} alt="" />
                   </Button>
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative hidden md:block">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}

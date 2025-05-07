@@ -7,15 +7,15 @@ import { motion } from 'framer-motion';
 const Banner = () => {
   return (
     <motion.div
-      className="my_container"
+      className="connaner"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
     >
       <div className="mt-5">
-        <section className="grid grid-cols-2 items-center -gap-5 justify-between">
-          <div className="w-[100%]">
-            <h1 className="text-[55px] font-Manjari font-bold leading-[96px] text-text1 w">
+        <section className="grid md:grid-cols-2 items-center -gap-5 justify-between">
+          <div className="w-[100%] order-2 lg:order-0 mt-[30px]">
+            <h1 className=" text-[40px] md:text-[55px] lg:text-[70px] font-Manjari font-bold leading-[50px] md:leading-[96px] text-text1 w">
               Potty train your pup the easy way
             </h1>
             <p className="text-[24px] leading-40px font-Popins text-text1 mt-[28px] mb-[31px]">
@@ -28,11 +28,11 @@ const Banner = () => {
             </Button>
           </div>
           <div className="w-[100% relative">
-            <div className="absolute top-[49px] -right-10">
+            <div className="absolute top-[49px] -right-10 hidden lg:block">
               <img src={BannerShaedow} alt="" />
             </div>
             <img src={BannerImg} alt="" className="w-full object-cover " />
-            <div className="absolute bottom-[0px] -left-10">
+            <div className="absolute bottom-[0px] -left-10 hidden lg:block">
               <img src={BannerShaedow} alt="" />
             </div>
           </div>

@@ -13,7 +13,7 @@ const Features = () => {
               Our Best Features
             </h2>
           </div>
-          <div className="grid grid-cols-3 mt-[80px] items-center mb-[100px]">
+          <div className="grid md:grid-cols-3 justify-center mt-[80px] items-center mb-[100px]">
             <div>
               {feurtsItem.slice(0, 2).map((item, index) => (
                 <div className="flex items-center gap-[19px] mb-[71px]">
@@ -29,10 +29,10 @@ const Features = () => {
                 </div>
               ))}
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex mt-[20px] items-center justify-center">
               <img src={mobileScreen} alt="img" />
             </div>
-            <div>
+            <div className="mt-[20px]">
               <div>
                 {feurtsItem.slice(2, 4).map((item, index) => (
                   <div className="flex flex-row-reverse items-center gap-[19px] mb-[71px]">

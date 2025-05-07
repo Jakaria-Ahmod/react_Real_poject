@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <div>
       <div>
-        <footer className="container">
-          <div className="grid grid-cols-3">
+        <footer className="container pt-[100px]">
+          <div className="grid md:grid-cols-2 md:justify-center lg:grid-cols-3">
             <div>
               <div>
                 <img src={LogoImg} alt="logo img" />
@@ -23,10 +23,10 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <h4 className="font-Popins text-[25px] font-medium leading-[24px]">
+              <h4 className="font-Popins text-[25px] mt-2.5 md:mt-0 text-end md:text-center font-medium leading-[24px]">
                 Quick Links
               </h4>
-              <ul className="mt-[100px]">
+              <ul className="mt-[10px] md:mt-[100px]">
                 {MenuItem?.slice(0, 5).map((item, index) => (
                   <li
                     key={item?.id}
@@ -38,10 +38,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-Popins font-medium leading-[24px] text-[#333333] text-[25px]">
+              <h4 className="font-Popins text-center md:text-start font-medium leading-[24px] text-[#333333] text-[25px]">
                 Download Our App
               </h4>
-              <p className="mt-[56px] text-lg font-Popins font-normal text-[#333333] w-[270px]">
+              <p className="mt-3 md:mt-[56px] text-lg font-Popins font-normal text-center md:text-start text-[#333333] w-[270px]">
                 Available on Google Play and App Store.
               </p>
               <div>
@@ -57,13 +57,13 @@ const Footer = () => {
             </div>
           </div>
           <div className="border-t border-red-600-50 py-[20px]">
-            <div className="flex items-center justify-between">
+            <div className="md:flex text-center md:text-end mb-2 items-center md:justify-center justify-between">
               <div>
                 <p className="font-Popins font-normal text-[14px]">
                   Copyright © 2023 potty.app
                 </p>
               </div>
-              <div className="flex gap-x-5">
+              <div className=" mt-[10px] md:mt-0 md:flex gap-x-5">
                 <span className="text-[14px] font-normal font-Popins text-[#333]">
                   Terms of Service
                 </span>
